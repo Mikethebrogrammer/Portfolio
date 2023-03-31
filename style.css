@@ -1,0 +1,1109 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ nav{
+    background-color: black;
+    height: 70px;
+}
+
+nav ul{
+    display: flex;
+    color: white;
+    float: right;
+    list-style-type: none;
+    position: relative;
+    left: 100px;
+}
+
+nav ul li {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+}
+
+nav ul li a{
+    color: white;
+   text-decoration: none;
+}
+
+.logo{
+    position: relative;
+    top: 19px;
+    color: rgb(255, 255, 255);
+    float: right;
+    right: 1300px;
+}
+
+@keyframes section{
+  0% {background-image: url(grid.jpg);}
+  25% {background-image: url(money.jpg);}
+  50% {background-image: url(apps.webp);}
+}
+
+
+  section{
+    animation-name: section;
+    background-image: url(grid.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+  }
+
+  section::before{
+    content:'';
+    height: 580px;
+    width: 2500px;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(14, 3, 115, 0.797), rgba(141, 4, 232, 0.6));
+    right: 1px;
+  }
+
+  .dropdown{
+    position: relative;
+    display: inline-flex;
+    overflow-y: auto;
+    padding-right: 215px;
+    padding-bottom: 600px;
+    z-index: 12; 
+  }
+
+  .dropbtn{
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content{
+    background-color: white;
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dropdown-content a{
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+.dropdown-content .top a{
+    background-color: #000000;
+    color: white;
+}
+
+
+section p{
+  position: relative;
+  float: right;
+  right: 700px;
+  color: white;
+  font-size: 50px;
+  font-family:  rubik;
+}
+
+section h4{
+  position: relative;
+  float: right;
+  right: 300px;
+  color: white;
+  text-align: center;
+  top: 70px;
+  font-size: 20px;
+}
+
+section h3{
+  position: relative;
+  float: right;
+  right: -220px;
+  color: white;
+  text-align: center;
+  top: 70px;
+  font-size: 20px;
+}
+
+
+section input{
+  position: relative;
+  left: 680px;
+  height: 40px;
+  width: 160px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: transparent;
+  top: 100px;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+section input:hover{
+  transform: scale(1.3);
+}
+
+.body{
+  border: 0.5px solid grey;
+  height: 50px;
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  transition: all 15s ease;
+  animation-iteration-count: infinite;
+}
+
+.body:hover{
+  transform: translateX(0px) translateX(-1600px)  translateZ(1600px);
+}
+
+.body a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  border-right: 2px solid rgb(177, 177, 177);
+  padding-right: 20px;
+  position: relative;
+  top: 15px;
+  height: 20px;
+  margin-left: 40px
+}
+
+.body a:hover{
+  background-color: rgba(198, 188, 188, 0.884);
+}
+
+.body a red{
+  color: red;
+}
+
+.body a green{
+  color: rgb(6, 231, 6);
+}
+
+.body2 h2{
+  color: rgb(6, 6, 81);
+  position: relative;
+  float: right;
+  left: -600px;
+  font-family: rubik;
+}
+
+.body2 video{
+  margin: 50px;
+  position: relative;
+  left: 100px;
+}
+
+.body2 h4{
+  float: right;
+  position: relative;
+  top: 50px;
+  right: 100px;
+  font-family: arial;
+  font-size: 18px;
+}
+
+.body2 two h4{
+  float: right;
+  position: relative;
+  top: -270px;
+  right: 80px;
+  font-family: arial;
+  font-size: 18px;
+}
+
+.body2 three h4{
+  float: right;
+  position: relative;
+  top: -200px;
+  right: -580px;
+  font-family: arial ;
+  font-size: 18px;
+}
+
+.body3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  height: 510px;
+  width: 100%;
+  position: relative;
+}
+
+.body3 h1{
+  color: white;
+ position: relative;
+ bottom: 210px;
+ left: 530px;
+ font-size: 45px;
+ font-family: josefin sans;
+ justify-content: center;
+ align-items: center;
+}
+
+.one{
+  color: white;
+  height: 330px;
+  border: transparent;
+  width: 315px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  right: 250px;
+  top: 30px;
+  background: linear-gradient(90deg, cyan, rgb(0, 102, 254));
+  margin: -10px;
+}
+
+.one h3{
+  font-size: 25px;
+}
+
+.one input{
+  width: 170px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+}
+
+.two{
+  color: white;
+  height: 330px;
+  border: transparent;
+  width: 315px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  right: 220px;
+  top: 30px;
+  background: linear-gradient(90deg, rgb(129, 3, 213), rgb(185, 2, 202));
+}
+
+.two h3{
+  font-size: 25px;
+}
+
+.two input{
+  width: 170px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+}
+
+.three{
+  color: white;
+  height: 330px;
+  border: transparent;
+  width: 315px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  right: 150px;
+  top: 30px;
+  background: linear-gradient(90deg, rgb(255, 123, 0), rgb(254, 195, 0));
+  margin: -50px;
+}
+
+.three h3{
+  font-size: 25px;
+}
+
+.three input{
+  width: 170px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+}
+
+.four{
+  color: white;
+  height: 330px;
+  border: transparent;
+  width: 315px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  right: 50px;
+  top: 30px;
+  background: linear-gradient(90deg, rgb(255, 42, 0), rgb(211, 107, 3));
+  margin: -30px;
+}
+
+.four h3{
+  font-size: 25px;
+}
+
+.four input{
+  width: 170px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 7px;
+  color: white;
+}
+
+.phone{
+ margin-left: 130px;
+  
+}
+
+.phone h1{
+  float: right;
+  position: relative;
+  right: 330px;
+  font-family: josefin sans;
+  font-size: 40px;
+  top: 30px;
+  font-weight: 600;
+}
+
+.yes{
+  float: right;
+  position: relative;
+  bottom: 450px;
+  font-size: 20px;
+  font-weight: 10;
+  right: 100px;
+}
+
+.yes h3{
+  font-family: josefin sans;
+  font-size: 18px;
+  font-weight: 50;
+}
+
+.wide{
+  background: linear-gradient(90deg, black, rgb(1, 1, 82), rgb(67, 2, 100));
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+}
+
+.wide img{
+  float: right;
+  position: relative;
+  left: 660px;
+}
+
+.wide h1{
+  color: white;
+  align-items: center;
+  display: flex;
+  float: right;
+  position: relative;
+  right: 800px;
+  bottom: 500px;
+  font-family: josefin sans;
+  font-size: 40px;
+}
+
+.wide h3{
+  color: white;
+  float: right;
+  position: relative;
+  right: 10px;
+  bottom: 430px;
+  font-family: josefin sans;
+  font-size: 25px;
+  font-weight: 50;
+}
+
+.wide h2{
+  color: white;
+  float: right;
+  position: relative;
+  right: 625px;
+  bottom: 350px;
+  font-family: josefin sans;
+  font-size: 25px;
+  font-weight: 50;
+}
+
+.url h1{
+  display: flex;
+  position: relative;
+  left: 600px;
+  font-family: josefin sans;
+  font-weight: 1000;
+}
+
+.vid{
+  position: relative;
+  margin-left: 150px;
+
+}
+
+.url h2{
+  text-align: center;
+  float: right;
+  font-family: josefin sans;
+  font-weight: 50;
+  font-size: 20px;
+  position: relative;
+  right: 100px;
+  bottom: 320px;
+}
+
+.url h2 two{
+  text-align: center;
+  float: right;
+  font-family: josefin sans;
+  font-weight: 50;
+  font-size: 20px;
+  position: relative;
+  top: 80px;
+  left: 640px;
+}
+
+.url h2 three{
+  text-align: center;
+  float: right;
+  font-family: josefin sans;
+  font-weight: 50;
+  font-size: 20px;
+  position: relative;
+  top: 100px;
+  left: 640px;
+}
+
+.cover{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 150px;
+}
+
+.daily{
+  position: relative;
+  bottom: 170px;
+  right: 60px;
+}
+
+.daily h1{
+  color: black;
+  position: relative;
+  left: 70px;
+  font-family: josefin sans;
+  font-size: 30px;
+  align-items: center;
+}
+
+.daily h3{
+  color: black;
+  text-align: center;
+  font-family: josefin sans;
+  position: relative;
+  right: 40px;
+  font-weight: 50;
+}
+
+.state{
+  position: relative;
+  bottom: 150px;
+  right: -50px;
+}
+
+.state h1{
+  color: black;
+  position: relative;
+  left: 0px;
+  font-family: josefin sans;
+  font-size: 30px;
+  align-items: center;
+}
+
+.state h3{
+  color: black;
+  text-align: center;
+  font-family: josefin sans;
+  position: relative;
+  right: 40px;
+  font-weight: 50;
+}
+
+.state img{
+  position: relative;
+  left: 20px;
+}
+
+.diverse{
+  position: relative;
+  bottom: 170px;
+  left: 90px;
+  transition: all 3s ease;
+}
+
+.diverse h1{
+  color: black;
+  position: relative;
+  left: 50px;
+  font-family: josefin sans;
+  font-size: 30px;
+  align-items: center;
+}
+
+.diverse h3{
+  color: black;
+  text-align: center;
+  font-family: josefin sans;
+  position: relative;
+  right: 10px;
+  font-weight: 50;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hardware{
+position: relative;
+right: 90px;
+top: 8px;
+}
+
+.hardware h1{
+  color: black;
+  position: relative;
+  right: 30px;
+  font-family: josefin sans;
+  font-size: 30px;
+  align-items: center;
+}
+
+.hardware h3{
+  color: black;
+  text-align: center;
+  font-family: josefin sans;
+  position: relative;
+  right: 30px;
+  font-weight: 50;
+}
+
+.dash{
+position: relative;
+bottom: 0px;
+right: -70px;
+}
+
+.dash h1{
+color: black;
+  position: relative;
+  left: 10px;
+  font-family: josefin sans;
+  font-size: 30px;
+  align-items: center;
+}
+
+.dash h3{
+  color: black;
+  text-align: center;
+  font-family: josefin sans;
+  position: relative;
+  right: 70px;
+  font-weight: 50;
+}
+
+.secure{
+  position: relative;
+  left: 130px;
+}
+
+.secure h1{
+  color: black;
+  position: relative;
+  left: 10px;
+  font-family: josefin sans;
+  font-size: 30px;
+  align-items: center;
+}
+
+.secure h3{
+  color: black;
+  text-align: center;
+  font-family: josefin sans;
+  position: relative;
+  right: 70px;
+  font-weight: 50;
+}
+
+.overall{
+  background-color: rgba(225, 226, 226, 0.626);
+  height: 800px;
+}
+
+.world{
+  background-image: url(earth.jpg);
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  margin-left: 20px;
+}
+
+.world h1{
+  font-family: josefin sans;
+  color: white;
+  font-size: 48px;
+  margin-left: 40px;
+}
+
+.world h2{
+  font-family: josefin sans;
+  color: white;
+  margin-left: 40px;
+}
+
+.another{
+  display: flex;
+  margin-left: 50px;
+  color: white;
+  margin-left: 100px;
+  font-size: 20px;
+  font-family: josefin sans;
+}
+
+.turkey{
+  position: relative;
+  left: 250px;
+}
+
+.Indonesia{
+  position: relative;
+  left: 450px;
+}
+
+.Espanol{
+  position: relative;
+  left: 650px;
+}
+
+.again{
+  display: flex;
+  margin-left: 50px;
+  color: white;
+  margin-left: 100px;
+  font-size: 20px;
+  font-family: josefin sans;
+}
+
+.france{
+  position: relative;
+  left: 220px;
+}
+
+.america{
+  position: relative;
+  left: 430px;
+}
+
+.japan{
+  position: relative;
+  left: 660px; 
+}
+
+.redo{
+  display: flex;
+  margin-left: 50px;
+  color: white;
+  margin-left: 100px;
+  font-size: 20px;
+  font-family: josefin sans;
+}
+
+.china{
+  position: relative;
+  left: 1px;
+}
+
+.german{
+  position: relative;
+  left: 240px;
+}
+
+.italy{
+  position: relative;
+  left: 440px; 
+}
+
+.sweden{
+  position: relative;
+  left: 660px; 
+}
+
+.faq h1{
+   color: black;
+   font-family: josefin sans;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   position: relative;
+   bottom: 190px;
+   left: 700px;
+   font-size: 35px;
+}
+
+.faq{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 50px;
+  transition: all 3s ease;
+}
+
+
+
+.box1{
+  height: 300px;
+  width: 650px;
+  background-color: rgba(236, 247, 254, 0.464);
+  margin-right: 50px;
+  box-shadow: 3px 3px 5px rgb(177, 175, 175);
+}
+
+.box2{
+  height: 300px;
+  width: 650px;
+  background-color: rgba(236, 247, 254, 0.464);
+  margin-left: -30px;
+  box-shadow: 3px 3px 5px rgb(177, 175, 175);
+}
+
+.box1 h2{
+  font-family: josefin sans;
+  font-weight: 50;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.box2 h2{
+  font-family: josefin sans;
+  font-weight: 50;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.faq2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 1px;
+}
+
+.box3{
+  height: 300px;
+  width: 650px;
+  background-color: rgba(236, 247, 254, 0.464);
+  margin-right: 50px;
+  box-shadow: 3px 3px 5px rgb(177, 175, 175);
+}
+
+.box4{
+  height: 300px;
+  width: 650px;
+  background-color: rgba(236, 247, 254, 0.464);
+  margin-left: -30px;
+  box-shadow: 3px 3px 5px rgb(177, 175, 175);
+}
+
+.box3 h2{
+  font-family: josefin sans;
+  font-weight: 50;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.box4 h2{
+  font-family: josefin sans;
+  font-weight: 50;
+  position: relative;
+  left: 50px;
+  top: 20px;
+  font-size: 20px;
+}
+
+.huge{
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(114, 14, 61));
+  height: 600px;
+  width: 100%;
+}
+
+.huge img{
+  float: right;
+  position: relative;
+  right: 270px;
+  top: 100px;
+}
+
+.huge h1{
+  font-family: josefin sans;
+  color: white;
+  font-size: 40px;
+  position: relative;
+  float: right;
+  right: 600px;
+  top: 100px;
+}
+
+.huge h2{
+font-family: josefin sans;
+color: white;
+position: relative;
+float: right;
+right: 360px;
+top: 120px;
+font-weight: 50;
+}
+
+.huge h2 two{
+  font-family: josefin sans;
+  color: white;
+  position: relative;
+  float: right;
+  right: -3px;
+  top: 50px;
+  font-weight: 50;
+  }
+
+  .near{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .near h1{
+    color: black;
+    font-family: josefin sans;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .near h3{
+    color: black;
+    font-family: josefin sans;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 50;
+  }
+
+  .end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .pic1{
+    position: relative;
+    right: 10px;
+  }
+
+  .pic1 img{
+    border-radius: 100%;
+    height: 200px;
+  }
+
+.pic1 h2{
+color: black;
+font-family: josefin sans;
+position: relative;
+left: 20px;
+}
+
+.pic2{
+  position: relative;
+  right: -20px;
+  top: 10px;
+
+}
+.pic2 img{
+  border-radius: 100%;
+  height: 200px;
+}
+
+.pic2 h2{
+  color: black;
+  font-family: josefin sans;
+  position: relative;
+  left: 20px;
+  }
+
+.pic3{
+  position: relative;
+  left: 30px;
+}
+
+.pic3 img{
+  border-radius: 100%;
+  height: 200px;
+}
+
+.pic3 h2{
+  color: black;
+  font-family: josefin sans;
+  position: relative;
+  }
+
+.pic4{
+  position: relative;
+  left: 50px;
+}
+
+.pic4 img{
+  border-radius: 100%;
+  height: 200px;
+}
+
+.pic4 h2{
+  color: black;
+  font-family: josefin sans;
+  position: relative;
+  left: 50px;
+  }
+
+  .pic1 h3{
+    font-family: josefin sans;
+    font-weight: 50;
+    text-align: center;
+    position: relative;
+    right: 50px;
+  }
+
+  .pic2 h3{
+    font-family: josefin sans;
+    font-weight: 50;
+    text-align: center;
+    position: relative;
+    right: 60px;
+  }
+
+  .pic3 h3{
+    font-family: josefin sans;
+    font-weight: 50;
+    text-align: center;
+    position: relative;
+    right: 60px;
+  }
+
+  .pic4 h3{
+    font-family: josefin sans;
+    font-weight: 50;
+    text-align: center;
+    position: relative;
+    right: 60px;
+  }
+
+  footer{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: white;
+    text-align: center;
+  }
+
+  footer p first{
+    font-family: josefin sans;
+    position: relative;
+    right: 1000px;
+    top: 50px;
+    float: right;
+    font-size: 20px;
+  }
+
+  footer p second{
+    float: right;
+    font-family: josefin sans;
+    position: relative;
+    right: -3px;
+    top: 50px;
+  }
+
+  footer p third{
+    font-family: josefin sans;
+    position: relative;
+    left: 120px;
+    top: 80px;
+  }
+
+  footer p v2{
+    font-family: josefin sans;
+    position: relative;
+    top: 65px;
+    right: -3px;
+    float: right;
+  }
+
+  footer a{
+    position: relative;
+    top: 140px;
+    right: 350px;
+    text-decoration: none;
+    color: green;
+    font-family: josefin sans;
+    font-size: 20px;
+  }
+
+  footer last a{
+    position: relative;
+    top: 140px;
+    right: 330px;
+    text-decoration: none;
+    color: green;
+    font-family: josefin sans;
+    font-size: 20px;
+  }
+
+  footer p four{
+    font-family: josefin sans;
+    position: relative;
+    left: 120px;
+    top: 90px;
+    left: 300px;
+  }
+
+  footer p fifth{
+    font-family: josefin sans;
+    position: relative;
+    text-align: center;
+    top: 130px;
+    font-size: 18px;
+  }
+
+
+
+ 
